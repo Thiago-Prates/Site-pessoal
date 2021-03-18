@@ -1,2 +1,8 @@
 # Site-pessoal
-Um site simples feito apenas com CSS, onde contém algumas informações sobre mim
+
+Um site feito com o intuito de escrever um pouco sobre mim e ao mesmo tempo colocar praticar um pouco.
+
+## Tecnologias 
+
+- HTML
+- CSS

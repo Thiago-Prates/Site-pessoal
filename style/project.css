@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 16px;
+  color: #d6d6d6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: url(../img/background-space.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body::-webkit-scrollbar {
+  background-color: #2b282f;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #d6d6d6;
+  border-radius: 0.4rem;
+}
+
+main {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin: 0 auto;
+  width: min(85%, 1080px);
+}
+
+h2 {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+main img {
+  width: 120px;
+  height: 120px;
+  padding-bottom: 1rem;
+}
+
+main p:nth-child(4) {
+  margin-top: 2rem;
+}
+
+p,
+a {
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+main a:first-child {
+  border-bottom: 2px solid #d6d6d6;
+  padding-bottom: 3px;
+}
+
+main a:first-child:hover {
+  border-bottom: 2px solid #d3cf65;
+  transition: 0.5s;
+}
+
+main a:first-child:visited {
+  color: #d3cf65;
+  border-bottom: 2px solid #d3cf65;
+}
+
+main a img {
+  border: 2px solid #b6b6b6;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  padding: 1rem;
+}

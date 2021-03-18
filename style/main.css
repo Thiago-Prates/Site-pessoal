@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 16px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: url(../img/background-space.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body::-webkit-scrollbar {
+  background-color: #2b282f;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #d6d6d6;
+  border-radius: 0.4rem;
+}
+
+.container {
+  margin: 0 auto;
+  width: min(85%, 1080px);
+}
+
+.blue {
+  color: #75e9f1;
+}
+.yellow {
+  color: #d3cf65;
+}
+.pink {
+  color: #ff048d;
+}
+.dark-blue {
+  display: block;
+  padding: 2rem 0;
+  color: #6272a4;
+}
+
+/* HEADER ======================================= */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+header a {
+  text-decoration: none;
+  color: #d6d6d6;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border-radius: 0.25rem;
+}
+
+header a:hover {
+  color: #2b282f;
+  background: #d6d6d6;
+  transition: 0.5s;
+}
+
+header a:first-child {
+  margin-right: 20rem;
+}
+/* HOME =========================================== */
+
+main .home {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main h2 span,
+main .home p {
+  font-size: 2.2rem;
+  color: #d6d6d6;
+}
+
+main h2 {
+  margin-bottom: 2rem;
+}
+
+/* Sobre Mim ==================*/
+
+section.about {
+  height: 95vh;
+  background-color: #2b282f;
+}
+
+section.about .container h2 {
+  color: #b6b6b6;
+  display: flex;
+
+  padding: 8rem 0 2rem 0;
+
+  font-size: 2rem;
+}
+
+section.about p {
+  color: #b6b6b6;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+/* Footer ======================== */
+footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 5vh;
+
+  background: #39373b;
+  color: #b6b6b6;
+}
+
+footer img {
+  padding: 0 5px;
+  width: 30px;
+  height: 30px;
+}
+/* Animation ==================== */
+.up {
+  opacity: 0;
+  animation: up 1.5s forwards;
+}
+.up:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.up:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+@keyframes up {
+  from {
+    opacity: 0;
+    transform: translateY(40%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+/* Responsividade ================================= */
+
+@media screen and (max-width: 730px) {
+  header a:first-child {
+    border-right: 2px solid #b6b6b6;
+    margin-right: 0;
+    padding-right: 2vw;
+    border-radius: 0;
+  }
+
+  .home p.up {
+    font-size: 5vw;
+  }
+
+  .home h2.up span {
+    font-size: 6vw;
+  }
+
+  .about {
+    margin-bottom: -32px;
+  }
+}
